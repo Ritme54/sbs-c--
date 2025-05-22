@@ -19,6 +19,8 @@ void main()
 	//단일 문자 저장 용어[ char:단일 문자 'A'(따움표 안)
 	//int:정수형, float : 실수형
 
+	//char packet 
+
 #pragma endregion
 
 #pragma region  변수 초반
