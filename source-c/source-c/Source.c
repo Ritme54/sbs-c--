@@ -11,24 +11,27 @@ void main()
 	//변수명 = 변수; : 오른쪽 변수에 저장된 값을 왼쪽 변수에 대입(할당)
 	//변수명 = 수식; : 오른쪽 수식의 연산값을 왼쪽 변수에 대입(할당)
 
-
+	// 복합 대입 연산자란 산술연산자와 대입 연산자를 하나로 나타내는 기호
+	// a += b : a = a + b
+	// 프로그래밍중 코딩을 간략하게 표현하여 가독성을 높이고자 할 때 사용
+	// 복합 대입 연산자 기호 : +=, -=, *=, /=, %=
 
 #pragma endregion
 
-#pragma region 대입 연산자 써보기
+#pragma region 대입 연산자, 복합 대입 연산자 써보기
 
-	int x, y, z;
+	int x, y;
+	x = 20;
+	y = x;
 
+	printf("x의 값 : %d\n", x); //x의 값 20
+	printf("x = y의 값 : %d\n", x = y); //y는 x의 값 20을 대입받음
+	printf("x+=y의 값 : %d\n", x += y); //x는 x + y의 값 20 + 20을 대입받음
+	printf("x-=y의 값 : %d\n", x -= y); //x는 x - y의 값 40 - 20을 대입받음
+	printf("x*=y의 값 : %d\n", x *= y); //x는 x * y의 값 20 * 20을 대입받음
+	printf("x/=y의 값 : %d\n", x /= y); //x는 x / y의 값 400 / 20을 대입받음
+	printf("x%%=y의 값 : %d\n", x %= y); //x는 x % y의 값 20 % 20을 대입받음	
 
-
-	x = 30;
-	y = x + 10;
-	z = x + y;
-
-
-	printf("x=%d,y=%d\n", x, y);
-	printf("y=%d\n", y);
-	printf("z=%d\n", z);
 
 #pragma endregion
 
