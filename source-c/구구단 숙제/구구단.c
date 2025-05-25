@@ -25,13 +25,14 @@ void main()
 	//}
 
 
-	int A = 1;
-
-	if (A=1)
+	for (int 擅熱 = 1; 擅熱 < 10; 擅熱++)
 	{
-		printf("aaa");
+		for (int 萌熱 = 1; 萌熱 < 10; 萌熱++)
+			{
+			printf("%d * %d = %d\n", 擅熱, 萌熱, 擅熱 * 萌熱);
+		}
+		printf("\n");
 	}
-
 
 
 }

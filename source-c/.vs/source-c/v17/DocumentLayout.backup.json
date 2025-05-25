@@ -3,32 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\\uBE44\uC96C\uC5BC \uC2A4\uD29C\uB514\uC624\\sbs-c--\\source-c\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{A5B0DF70-8D09-4F0B-B131-002B6964E913}|\uAD6C\uAD6C\uB2E8 \uC219\uC81C\\\uAD6C\uAD6C\uB2E8 \uC219\uC81C.vcxproj|C:\\Users\\Administrator\\Desktop\\sbs-c--\\source-c\\\uAD6C\uAD6C\uB2E8 \uC219\uC81C\\\uAD6C\uAD6C\uB2E8.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A5B0DF70-8D09-4F0B-B131-002B6964E913}|\uAD6C\uAD6C\uB2E8 \uC219\uC81C\\\uAD6C\uAD6C\uB2E8 \uC219\uC81C.vcxproj|C:\\Users\\user\\Desktop\\\uBE44\uC96C\uC5BC \uC2A4\uD29C\uB514\uC624\\sbs-c--\\source-c\\\uAD6C\uAD6C\uB2E8 \uC219\uC81C\\\uAD6C\uAD6C\uB2E8.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A5B0DF70-8D09-4F0B-B131-002B6964E913}|\uAD6C\uAD6C\uB2E8 \uC219\uC81C\\\uAD6C\uAD6C\uB2E8 \uC219\uC81C.vcxproj|solutionrelative:\uAD6C\uAD6C\uB2E8 \uC219\uC81C\\\uAD6C\uAD6C\uB2E8.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8F27BC-917E-4068-8579-5ADE309BB3F3}|\uBC18\uBCF5\uBB38\\\uBC18\uBCF5\uBB38.vcxproj|C:\\Users\\Administrator\\Desktop\\sbs-c--\\source-c\\source-c\\class3th.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{DF8F27BC-917E-4068-8579-5ADE309BB3F3}|\uBC18\uBCF5\uBB38\\\uBC18\uBCF5\uBB38.vcxproj|C:\\Users\\user\\Desktop\\\uBE44\uC96C\uC5BC \uC2A4\uD29C\uB514\uC624\\sbs-c--\\source-c\\source-c\\class3th.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DF8F27BC-917E-4068-8579-5ADE309BB3F3}|\uBC18\uBCF5\uBB38\\\uBC18\uBCF5\uBB38.vcxproj|solutionrelative:source-c\\class3th.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74BC609D-0899-4CA5-B02D-FF0E166ACE06}|source-c\\source-c.vcxproj|C:\\Users\\Administrator\\Desktop\\sbs-c--\\source-c\\source-c\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{74BC609D-0899-4CA5-B02D-FF0E166ACE06}|source-c\\source-c.vcxproj|C:\\Users\\user\\Desktop\\\uBE44\uC96C\uC5BC \uC2A4\uD29C\uB514\uC624\\sbs-c--\\source-c\\source-c\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{74BC609D-0899-4CA5-B02D-FF0E166ACE06}|source-c\\source-c.vcxproj|solutionrelative:source-c\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-=======
-      "AbsoluteMoniker": "D:0:0:{74BC609D-0899-4CA5-B02D-FF0E166ACE06}|source-c\\source-c.vcxproj|C:\\Users\\user\\Desktop\\\uBE44\uC96C\uC5BC \uC2A4\uD29C\uB514\uC624\\sbs-c--\\source-c\\source-c\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{74BC609D-0899-4CA5-B02D-FF0E166ACE06}|source-c\\source-c.vcxproj|solutionrelative:source-c\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2806097-EEFB-4010-89AF-624BBDF8BDB1}|class1th(Vanable \u0026 Constant)\\class1th(Vanable \u0026 Constant).vcxproj|C:\\Users\\user\\Desktop\\\uBE44\uC96C\uC5BC \uC2A4\uD29C\uB514\uC624\\sbs-c--\\source-c\\class1th(Vanable \u0026 Constant)\\source1th.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E2806097-EEFB-4010-89AF-624BBDF8BDB1}|class1th(Vanable \u0026 Constant)\\class1th(Vanable \u0026 Constant).vcxproj|solutionrelative:class1th(Vanable \u0026 Constant)\\source1th.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
->>>>>>> 6c92ca68424c8d06078d78bc035f58215a2b8258
     },
     {
       "AbsoluteMoniker": "D:0:0:{1EBACCEA-BA39-495C-B5E2-D990B3FE04CA}|class 2th (bit)\\class 2th (bit).vcxproj|C:\\Users\\user\\Desktop\\\uBE44\uC96C\uC5BC \uC2A4\uD29C\uB514\uC624\\sbs-c--\\source-c\\class 2th (bit)\\source 2th (bit).c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1EBACCEA-BA39-495C-B5E2-D990B3FE04CA}|class 2th (bit)\\class 2th (bit).vcxproj|solutionrelative:class 2th (bit)\\source 2th (bit).c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2806097-EEFB-4010-89AF-624BBDF8BDB1}|class1th(Vanable \u0026 Constant)\\class1th(Vanable \u0026 Constant).vcxproj|C:\\Users\\Administrator\\Desktop\\sbs-c--\\source-c\\class1th(Vanable \u0026 Constant)\\source1th.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E2806097-EEFB-4010-89AF-624BBDF8BDB1}|class1th(Vanable \u0026 Constant)\\class1th(Vanable \u0026 Constant).vcxproj|C:\\Users\\user\\Desktop\\\uBE44\uC96C\uC5BC \uC2A4\uD29C\uB514\uC624\\sbs-c--\\source-c\\class1th(Vanable \u0026 Constant)\\source1th.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E2806097-EEFB-4010-89AF-624BBDF8BDB1}|class1th(Vanable \u0026 Constant)\\class1th(Vanable \u0026 Constant).vcxproj|solutionrelative:class1th(Vanable \u0026 Constant)\\source1th.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -51,12 +42,7 @@
               "RelativeToolTip": "class1th(Vanable \u0026 Constant)\\source1th.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-21T05:42:07.592Z",
-<<<<<<< HEAD
-              "EditorCaption": ""
-=======
-              "IsPinned": true
->>>>>>> 6c92ca68424c8d06078d78bc035f58215a2b8258
+              "WhenOpened": "2025-05-25T12:29:21.441Z"
             },
             {
               "$type": "Document",
@@ -68,55 +54,43 @@
               "RelativeToolTip": "class 2th (bit)\\source 2th (bit).c",
               "ViewState": "AgIAAIoAAAAAAAAAAAAqwKgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-22T06:23:51.888Z"
+              "WhenOpened": "2025-05-25T12:29:21.613Z"
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 1,
               "Title": "class3th.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\source-c\\source-c\\class3th.c",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uBE44\uC96C\uC5BC \uC2A4\uD29C\uB514\uC624\\sbs-c--\\source-c\\source-c\\class3th.c",
               "RelativeDocumentMoniker": "source-c\\class3th.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\source-c\\source-c\\class3th.c",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uBE44\uC96C\uC5BC \uC2A4\uD29C\uB514\uC624\\sbs-c--\\source-c\\source-c\\class3th.c",
               "RelativeToolTip": "source-c\\class3th.c",
               "ViewState": "AgIAAFgAAAAAAAAAAAAAAIMAAAAUAAAAAAAAAA==",
-=======
-              "DocumentIndex": 0,
-              "Title": "Source.c",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uBE44\uC96C\uC5BC \uC2A4\uD29C\uB514\uC624\\sbs-c--\\source-c\\source-c\\Source.c",
-              "RelativeDocumentMoniker": "source-c\\Source.c",
-              "ToolTip": "C:\\Users\\user\\Desktop\\\uBE44\uC96C\uC5BC \uC2A4\uD29C\uB514\uC624\\sbs-c--\\source-c\\source-c\\Source.c",
-              "RelativeToolTip": "source-c\\Source.c",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
->>>>>>> 6c92ca68424c8d06078d78bc035f58215a2b8258
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-23T05:39:50.379Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T12:29:21.615Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "source.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\source-c\\source-c\\source.c",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uBE44\uC96C\uC5BC \uC2A4\uD29C\uB514\uC624\\sbs-c--\\source-c\\source-c\\source.c",
               "RelativeDocumentMoniker": "source-c\\source.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\source-c\\source-c\\source.c",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uBE44\uC96C\uC5BC \uC2A4\uD29C\uB514\uC624\\sbs-c--\\source-c\\source-c\\source.c",
               "RelativeToolTip": "source-c\\source.c",
               "ViewState": "AgIAACwAAAAAAAAAAAAAADEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-23T06:02:10.281Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T12:29:21.618Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "\uAD6C\uAD6C\uB2E8.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\source-c\\\uAD6C\uAD6C\uB2E8 \uC219\uC81C\\\uAD6C\uAD6C\uB2E8.c",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uBE44\uC96C\uC5BC \uC2A4\uD29C\uB514\uC624\\sbs-c--\\source-c\\\uAD6C\uAD6C\uB2E8 \uC219\uC81C\\\uAD6C\uAD6C\uB2E8.c",
               "RelativeDocumentMoniker": "\uAD6C\uAD6C\uB2E8 \uC219\uC81C\\\uAD6C\uAD6C\uB2E8.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\source-c\\\uAD6C\uAD6C\uB2E8 \uC219\uC81C\\\uAD6C\uAD6C\uB2E8.c",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uBE44\uC96C\uC5BC \uC2A4\uD29C\uB514\uC624\\sbs-c--\\source-c\\\uAD6C\uAD6C\uB2E8 \uC219\uC81C\\\uAD6C\uAD6C\uB2E8.c",
               "RelativeToolTip": "\uAD6C\uAD6C\uB2E8 \uC219\uC81C\\\uAD6C\uAD6C\uB2E8.c",
-              "ViewState": "AgIAABUAAAAAAAAAAADwvx4AAAACAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAEwCEAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-23T06:50:38.566Z",
+              "WhenOpened": "2025-05-25T12:29:21.722Z",
               "EditorCaption": ""
             }
           ]
