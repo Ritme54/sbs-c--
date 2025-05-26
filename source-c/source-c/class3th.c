@@ -20,9 +20,9 @@ void main()
 
 #pragma region 대입 연산자, 복합 대입 연산자 써보기
 
-	int x, y;
-	x = 20;
-	y = x;
+	//int x, y;
+	//x = 20;
+	//y = x;
 
 	//printf("x의 값 : %d\n", x); //x의 값 20
 	//printf("x = y의 값 : %d\n", x = y); //y는 x의 값 20을 대입받음
