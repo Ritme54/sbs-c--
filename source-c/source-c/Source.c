@@ -54,11 +54,11 @@ void main()
 	//포인터 변수에 변수의 시작 주소를 저장하게 되면
 	//해당 변수의 시작 주소를 가리키게 됩니다.
 
-	int X = 10;
-	int* Y = &X;
-
-		printf("X의 주소 : %p\n", &X);
-		printf("Y의 주소 : %p\n", Y);
+	//int X = 10;
+	//int* Y = &X;
+	//
+	//	printf("X의 주소 : %p\n", &X);
+	//	printf("Y의 주소 : %p\n", Y);
 
 
 
