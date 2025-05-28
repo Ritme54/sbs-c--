@@ -86,18 +86,18 @@ void main()
 	// 자동으로 높은 데이터 타입으로 변환됩니다.
 	//이 과정은 암묵적 형 변환의 일종으로, 프로그래머가 명시적으로 형 변환을 하지 않아도 자동으로 이루어집니다.
 	//이러한 승격은 오버플로우를 방지하고, 연산의 정확성을 높이는 데 도움을 줍니다.
-
-	char a = 10; 
-	short b = 20; 
-	int c = 30;
-	
-	int result = a + b + c; // char와 short는 int로 승격되어 연산됨
-	printf("a 메모리크기:%d\n", sizeof(a)); // 1byte
-	printf("b 메모리크기:%d\n", sizeof(b)); // 2byte
-	printf("c 메모리크기:%d\n", sizeof(c)); // 4byte
-
-	printf("result 메모리크기:%d\n", sizeof(result)); // 4byte
-	printf("result의 값: %d\n", result); // 60
+	//
+	//char a = 10; 
+	//short b = 20; 
+	//int c = 30;
+	//
+	//int result = a + b + c; // char와 short는 int로 승격되어 연산됨
+	//printf("a 메모리크기:%d\n", sizeof(a)); // 1byte
+	//printf("b 메모리크기:%d\n", sizeof(b)); // 2byte
+	//printf("c 메모리크기:%d\n", sizeof(c)); // 4byte
+	//
+	//printf("result 메모리크기:%d\n", sizeof(result)); // 4byte
+	//printf("result의 값: %d\n", result); // 60
 
 #pragma endregion
 
