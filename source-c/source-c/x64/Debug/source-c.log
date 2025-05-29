@@ -1,2 +1,3 @@
 ﻿  source.c
-  source-c.vcxproj -> C:\Users\Administrator\Desktop\sbs-c--\source-c\x64\Debug\source-c.exe
+C:\Users\Administrator\Desktop\sbs-c--\source-c\source-c\source.c(73,2): error C2106: '=': 왼쪽 피연산자는 l-value이어야 합니다.
+C:\Users\Administrator\Desktop\sbs-c--\source-c\source-c\source.c(77,2): error C2146: 구문 오류: ';'이(가) 'printf' 식별자 앞에 없습니다.

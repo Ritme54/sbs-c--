@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\source-c\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D4EE3E45-31C1-40BF-B44B-6337A23CC909}|class6th(pointer)\\class6th(pointer).vcxproj|C:\\Users\\Administrator\\Desktop\\sbs-c--\\source-c\\class6th(pointer)\\class6th.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4EE3E45-31C1-40BF-B44B-6337A23CC909}|class6th(pointer)\\class6th(pointer).vcxproj|solutionrelative:class6th(pointer)\\class6th.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{74BC609D-0899-4CA5-B02D-FF0E166ACE06}|source-c\\source-c.vcxproj|C:\\Users\\Administrator\\Desktop\\sbs-c--\\source-c\\source-c\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{74BC609D-0899-4CA5-B02D-FF0E166ACE06}|source-c\\source-c.vcxproj|solutionrelative:source-c\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -42,7 +46,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "source1th.c",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\source-c\\class1th(Vanable \u0026 Constant)\\source1th.c",
               "RelativeDocumentMoniker": "class1th(Vanable \u0026 Constant)\\source1th.c",
@@ -56,7 +60,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "source 2th (bit).c",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\source-c\\class 2th (bit)\\source 2th (bit).c",
               "RelativeDocumentMoniker": "class 2th (bit)\\source 2th (bit).c",
@@ -69,7 +73,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "class3th.c",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\source-c\\source-c\\class3th.c",
               "RelativeDocumentMoniker": "source-c\\class3th.c",
@@ -82,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "class4th.c",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\source-c\\class4th (Condtional statment)\\class4th.c",
               "RelativeDocumentMoniker": "class4th (Condtional statment)\\class4th.c",
@@ -95,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Class5th.c",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\source-c\\Class5th(Type Conversion)\\Class5th.c",
               "RelativeDocumentMoniker": "Class5th(Type Conversion)\\Class5th.c",
@@ -104,26 +108,38 @@
               "ViewState": "AgIAABoAAAAAAAAAAAApwF8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-05-27T05:22:42.71Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "class6th.c",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\source-c\\class6th(pointer)\\class6th.c",
+              "RelativeDocumentMoniker": "class6th(pointer)\\class6th.c",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\source-c\\class6th(pointer)\\class6th.c",
+              "RelativeToolTip": "class6th(pointer)\\class6th.c",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAtwHMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-05-29T04:05:21.543Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "source.c",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\source-c\\source-c\\Source.c",
               "RelativeDocumentMoniker": "source-c\\Source.c",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\source-c\\source-c\\Source.c",
               "RelativeToolTip": "source-c\\Source.c",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAYwJIAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAqwC8AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-05-25T12:29:21.618Z",
-              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "\uAD6C\uAD6C\uB2E8.c",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\source-c\\\uAD6C\uAD6C\uB2E8 \uC219\uC81C\\\uAD6C\uAD6C\uB2E8.c",
               "RelativeDocumentMoniker": "\uAD6C\uAD6C\uB2E8 \uC219\uC81C\\\uAD6C\uAD6C\uB2E8.c",
