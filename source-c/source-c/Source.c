@@ -1,112 +1,107 @@
 #include <stdio.h>
 
-void main()
+
+//void Stats(int health, const char* name)
+//{
+//
+//	printf("health : %d\n", health);
+//	printf("name : %s\n", name);
+//
+//
+//}
+
+void Swap(int left, int right)
+{
+	int temporary = left;
+	left = right;
+	right = temporary;
+
+
+}
+
+void main() 
 {
 
-#pragma region 배열 (인덱스)
-	//같은 자료형의 변수들로 이루어진 유한 집합입니다.
 
-	//배열의 경우 첫번째 원소는 0부터 시작한다.
-
-//	int A1[6]; //[][][[][] int = 4byte * n
-//
-//	int size = sizeof(A1) / sizeof(int);
-//
-//	for (int i = 0; i < size; i++)
-//	{
-//		A1[i] = (i + 1) * 10;
-//		printf("A1[%d]=%d\n", i, A1[i]);
-//		
-//	}
-//printf("A1배열의 크기 : %d\n", size);
-	
+#pragma region 함수
 
 
-	//배열은 원하는 원소에 원하는 값을 저장할 수 있으며
-    //배열의 크기는 컴파일이 되는 시점부터 고정돈 메모리 공간을 가지게 된다.
-	//int list[5] = { 1,2, 3, 4, 5 };
+	//하나의 특별한 목적의 작업을 수행하기 위해 독립적으로 설계된 코드의 집합.
+	// 
+	//함수는 프로그램이 실행 중일때 함수 호출 위치에서 해당 함수로 이동한 뒤,
+	//작업을 수행하고 다시 원래 위치로 돌아오는 구조
+		//process();
 
-	//int* Y = &list;
 
-		//printf("list[0]의 값 : %d\n", list[0]);
-		//
-		//printf("Y변수의 값 : %p\n", Y);
-		//
-		//Y = Y + 1;
-		//
-		//printf("Y변수의 값 : %p\n", Y);
-		//printf("list[1]의 주소 값 :%p\n", &list[1]);
-		//
-		//float room[] = { 8.5,10.5,12.5 };
-		//
-		////배열의 크기는 생략할 수 있으며,
-		////초기화 목록에서 설정한 요소에 따라 배열의 크기가 결정된다.
-			//pointer+1 에서 +1은 사용하는 자료값 즉 int=4byte 
 
-	//배열명은 포인터 상수
 
-	//배열명 = 시작주소값이며, 배열의 요소들은 주소들이 연속적으로 붙어있다.
-	//이 때 연속적인 주소 정보를 변경시키면 안 되기 때문에, 주소를 바꾸지 못하게 주소가 상수값으로
-	//고정되어 있다.
-	//그러므로 배열명은 포인터 상수이며, 배열의 주소를 변경할 수 없다.
+#pragma region 매개변수
+
+//함수의 정의에서 전달받은 인수를 함수 내부로 전달하기 위해 사용하는 변수
+
+//매개 변수는 함수 내부에서만 연산이 이루어지며,
+//여러 개의 매개 변수를 생성할 수 있습니다.
+
+	//Stats(100, "slime");
+
+	//Stats(200, "ime");
+
+	//Stats(300, "lime");
 
 #pragma endregion
 
-#pragma region 문자열
-		//연속적인 메모리 공간에 저장된 문자 변수의 집합이다.
 
-		//문자열의 경우 포인터를 이용하여 문자열 상수를 가리키도록 할 수 있으며,
-		//문자열 상수는 데이터 영역에 읽기 전용 공간에 저장되기 때문에 문자열의 값을 변경할 수 없다.
+#pragma region 인수
+	//함수가 호출될 때 매개 변수에 실제로 전달되는 값
 
-//		const char* word = "Game";
+	//인수의 경우 값을 전달하는 인수와 값을 전달받는 매개 변수의 자료형이 서로 일치해야 합니다.
 
-	//word = "League of Leg\0end";
-		//		6	1 2 1 3 1 3 1
-
-		//printf("word의 문자열 : %s\n", word);
+	int X = 10;
+	int Y = 20;
 	
-		//문자열의 공백도 함께 메모리 공간에 포함하여 크기가 결정되며,
-		//마지막에 문자열의 끝을 알려주는 보이지 않는 제어문자 null(\0)이 존재한다.
-		//Read Only data segment (읽기 전용 메모리 공간)
-		// 문자열을 저장하게 되면 맨 마지막에 무효의 문자까지 저장한다.
-		//ㅁㅁㅁㅁ
-		//00FA5D0
+	int x = &X;
+	int y = &Y;
 
-	//char name[] = "James";
+	printf("%p\n", &X);
+	
+	printf("%p\n", &Y);
+	printf("%d\n", Y);
+	//임시변수
+	//
+	//  int Z = Y;
+	 // Y = X;
+	 // X = Z;
+	//
 
-	//printf("name배열의 값 : %s\n", name);
-	//            (문자열)
-	//name[0] = 'S';
-	//name = "booms"
+	Swap(&x, &y);
 
-
-	//인덱스 값에서 문자를 바꿀때는 ''사용
-	//printf("name배열의 값 : %s\n", name);
-
+	printf("x의 값 : %p\n", x);
+	printf("y의 값 : %p\n", y);
 	
 
 #pragma endregion
 
-#pragma region 아스키 코드
 
-	//아스키 코드는 7비트로 표현되는 문자 인코딩 방식으로, 하나의 문자를 나타내기 위해 7비트의 이진수를 사용하고
-	//7개의 비트로 표현되는 아스키 코드는 2의 7승 즉 128개의 문자를 나타낼 수 있다.
-	//이 128가지 안에는 영여 대문자, 영여 소문자, 숫자, 특수문자 등이 포함되어 있다.
-
-	//printf("아스키 코드 X 문자로 표현: %c\n\n", 'X');// X
-	//printf("아스키 코드 X를 숫자로 표현: %d\n\n", 'X'); //88
 
 #pragma endregion
 
-#pragma region 유니코드
-	//유니코드는 전 세계의 모든 문자를 표현하기 위해 설계된 문자 인코딩 방식으로,
-	//그동안 서로 다른 인코딩 방식을 사용하는 시스템 간의 파일 깨짐 등의 문제를 해결하기 위해
-	//유니코드가 개발되었다.
-	//유니코드는 각 문자를 고유한 코드 포인트로 할당하는데 , 이 코드 포인트는 16비트 또는 32비트로 표현되며,
-	//16비트 기준으로 U+0000부터 U+FFFF까지의 범위를 가진다.
+#pragma region 레퍼런스
 
-	//printf("유니코드로 문자 표현 : \u0062\u0061\u006E\u0061\u006E\u0061\n");
 
 #pragma endregion
+
+
+#pragma region Call by Value문제 (숙제)
+	//Call by Refence (참조에 의한 해결)
+	//주소값을 참조해서 해결해보기
+
+
+
+
+#pragma endregion
+
+
+
+
 
 }
