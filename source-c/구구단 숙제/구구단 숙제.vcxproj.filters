@@ -18,5 +18,8 @@
     <ClCompile Include="구구단.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="레퍼.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

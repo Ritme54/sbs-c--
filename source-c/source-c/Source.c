@@ -10,15 +10,15 @@
 //
 //}
 
-void Swap(int left, int right)
-{
-	int temporary = left;
-	left = right;
-	right = temporary;
-
-
-}
-
+//void Swap(int left, int right)
+//{
+//	int temporary = left;
+//	left = right;
+//	right = temporary;
+//
+//
+//}
+//
 void main() 
 {
 
@@ -56,16 +56,16 @@ void main()
 
 	//인수의 경우 값을 전달하는 인수와 값을 전달받는 매개 변수의 자료형이 서로 일치해야 합니다.
 
-	int X = 10;
-	int Y = 20;
-	
-	int x = &X;
-	int y = &Y;
-
-	printf("%p\n", &X);
-	
-	printf("%p\n", &Y);
-	printf("%d\n", Y);
+	//int X = 10;
+	//int Y = 20;
+	//
+	//int x = &X;
+	//int y = &Y;
+	//
+	//printf("%p\n", &X);
+	//
+	//printf("%p\n", &Y);
+	//printf("%d\n", Y);
 	//임시변수
 	//
 	//  int Z = Y;
@@ -73,11 +73,11 @@ void main()
 	 // X = Z;
 	//
 
-	Swap(&x, &y);
-
-	printf("x의 값 : %p\n", x);
-	printf("y의 값 : %p\n", y);
-	
+	//Swap(&x, &y);
+	//
+	//printf("x의 값 : %p\n", x);
+	//printf("y의 값 : %p\n", y);
+	//
 
 #pragma endregion
 
@@ -94,8 +94,6 @@ void main()
 #pragma region Call by Value문제 (숙제)
 	//Call by Refence (참조에 의한 해결)
 	//주소값을 참조해서 해결해보기
-
-
 
 
 #pragma endregion

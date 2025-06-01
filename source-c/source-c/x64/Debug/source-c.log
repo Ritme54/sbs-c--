@@ -1,12 +1,2 @@
 ﻿  source.c
-C:\Users\Administrator\Desktop\sbs-c--\source-c\source-c\source.c(76,7): warning C4047: '함수': 'int'의 간접 참조 수준이 'int *'과(와) 다릅니다.
-C:\Users\Administrator\Desktop\sbs-c--\source-c\source-c\source.c(76,7): warning C4024: 'Swap': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-C:\Users\Administrator\Desktop\sbs-c--\source-c\source-c\source.c(76,11): warning C4047: '함수': 'int'의 간접 참조 수준이 'int *'과(와) 다릅니다.
-C:\Users\Administrator\Desktop\sbs-c--\source-c\source-c\source.c(76,11): warning C4024: 'Swap': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
-C:\Users\Administrator\Desktop\sbs-c--\source-c\source-c\source.c(78,9): warning C4477: 'printf' : 서식 문자열 '%p'에 'void *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int'입니다.
-C:\Users\Administrator\Desktop\sbs-c--\source-c\source-c\source.c(78,9): warning C4313: 'printf': 서식 문자열의 '%p'이(가) int' 형식의 인수 1과(와) 충돌합니다.
-C:\Users\Administrator\Desktop\sbs-c--\source-c\source-c\source.c(79,9): warning C4477: 'printf' : 서식 문자열 '%p'에 'void *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int'입니다.
-C:\Users\Administrator\Desktop\sbs-c--\source-c\source-c\source.c(79,9): warning C4313: 'printf': 서식 문자열의 '%p'이(가) int' 형식의 인수 1과(와) 충돌합니다.
-C:\Users\Administrator\Desktop\sbs-c--\source-c\source-c\source.c(62,6): warning C4047: '초기화 중': 'int'의 간접 참조 수준이 'int *'과(와) 다릅니다.
-C:\Users\Administrator\Desktop\sbs-c--\source-c\source-c\source.c(63,6): warning C4047: '초기화 중': 'int'의 간접 참조 수준이 'int *'과(와) 다릅니다.
-  source-c.vcxproj -> C:\Users\Administrator\Desktop\sbs-c--\source-c\x64\Debug\source-c.exe
+  source-c.vcxproj -> C:\Users\tmdwn\Desktop\sbs-c--\source-c\x64\Debug\source-c.exe

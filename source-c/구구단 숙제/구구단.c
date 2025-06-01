@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 
-void main()
-{
+//void main()
+//{
 	//for (int i = 0; i < 3; i++)
 	//{
 	//	printf("i변수의 값 : %d\n", i);
@@ -33,7 +33,5 @@ void main()
 	//	}
 	//	printf("\n");
 	//}
-
-
-}
+//}
 
