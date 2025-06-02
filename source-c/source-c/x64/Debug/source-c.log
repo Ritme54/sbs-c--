@@ -1,2 +1,3 @@
 ﻿  source.c
-  source-c.vcxproj -> C:\Users\tmdwn\Desktop\sbs-c--\source-c\x64\Debug\source-c.exe
+C:\Users\Administrator\Desktop\sbs-c--\source-c\source-c\source.c(185,17): warning C4133: '=': 'void (__cdecl *)()'과(와) 'int (__cdecl *)()' 사이의 형식이 호환되지 않습니다.
+  source-c.vcxproj -> C:\Users\Administrator\Desktop\sbs-c--\source-c\x64\Debug\source-c.exe
