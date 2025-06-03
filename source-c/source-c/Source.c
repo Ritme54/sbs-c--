@@ -29,22 +29,22 @@ int main()
 	//포인트 타입 void*는 어떤 자료형의 포인터도 가리킬 수 있는 포인터 타입입니다.
 	//오브젝트를 내 마음대로 할당하고 해제할 수 있는 메모리 공간입니다.
 
-	int* pointer = malloc(4); //4바이트 크기의 메모리를 동적으로 할당합니다.
-	
-	*pointer = 10; //할당된 메모리에 값을 저장합니다.
-	
-
-	printf("pointer가 가리키는 값 : %d\n", *pointer);
-
-	free(pointer); //동적으로 할당된 메모리를 해제합니다.
-
-	pointer = malloc(3 * 4); //3개의 int형 변수를 저장할 수 있는 메모리를 동적으로 할당합니다.=12바이트
-	for (int i = 0; i < 3; i++)// for 함수로 연속적으로 메모리를 할당합니다.
-	{
-		pointer[i] = (i + 1) * 10;
-		printf("pointer[%d]의 값 : %d\n", i, pointer[i]);
-	}
-	free(pointer);
+	//int* pointer = malloc(4); //4바이트 크기의 메모리를 동적으로 할당합니다.
+	//
+	//*pointer = 10; //할당된 메모리에 값을 저장합니다.
+	//
+	//
+	//printf("pointer가 가리키는 값 : %d\n", *pointer);
+	//
+	//free(pointer); //동적으로 할당된 메모리를 해제합니다.
+	//
+	//pointer = malloc(3 * 4); //3개의 int형 변수를 저장할 수 있는 메모리를 동적으로 할당합니다.=12바이트
+	//for (int i = 0; i < 3; i++)// for 함수로 연속적으로 메모리를 할당합니다.
+	//{
+	//	pointer[i] = (i + 1) * 10;
+	//	printf("pointer[%d]의 값 : %d\n", i, pointer[i]);
+	//}
+	//free(pointer);
 #pragma endregion
 
 #pragma region 추가내용
@@ -84,6 +84,32 @@ int main()
 #pragma endregion
 
 #pragma region 숙제 uaf
+	//UAF(Use After Free)는 메모리 관리에서 발생할 수 있는 버그 중 하나로,
+	//heap 영역에서 동적으로 할당된 메모리를 해제한 후 해제된 메모리를 다시 사용하는 경우를 말합니다.
+	//이러한 상황은 프로그램의 예기치 않은 동작을 초래할 수 있으며, 보안 취약점으로 이어질 수 있습니다.
+	//C, C++와 같은 언어에서는 메모리 관리를 프로그래머가 직접 수행하기 때문에
+	//UAF 버그가 발생할 가능성이 높습니다.
+
+	//위험한 이유
+	//해제된 메모리를 다시 사용하면, 해당 메모리 공간에 다른 데이터가 덮어쓰여질 수 있습니다.
+	//이로 인해 프로그램이 예기치 않은 동작을 하거나, 보안 취약점이 발생할 수 있습니다.
+	//일부 해커들은 UAF 버그를 이용하여 악의적인 코드를 실행하거나, 시스템에 침투할 수 있습니다.
+
+	// 메모리를 제참조한 예시 코드
+	int* exuaf = malloc(sizeof(int)); // int형 변수 크기만큼 메모리를 동적으로 할당합니다.
+	*exuaf = 10;
+	printf("exuaf가 가리키는 값 : %d\n", *exuaf);
+	printf("exuaf의 주소 : %p\n", (void*)exuaf);
+
+	free(exuaf); //동적으로 할당된 메모리를 해제합니다.
+
+	printf("exuaf가 가리키는 값 : %d\n", *exuaf); //해제된 메모리를 다시 사용하려고 시도합니다. : UAF 발생
+
+	
+	
+
+	
+
 
 
 
