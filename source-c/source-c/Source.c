@@ -1,123 +1,139 @@
 #include <stdio.h>
-#include <stdlib.h> //malloc, free 함수 사용을 위한 헤더 파일
+#include <math.h>
 
+struct Card//struct 구조체 이름
+{
+	char grade; //1byte +3byte(패딩) = 4byte
+	int health; //4byte 
+	double attack; //8byte
+	
+	//구조체의 크기는 구조체를 구성하는 멤버 중에서
+	// 가장 큰 자료형의 배수가 되도록 설정합니다.
+};
+
+struct where
+{
+	double x;
+	double y;
+};
+
+struct Node
+{
+	int data; //노드에 저장할 데이터
+	struct Node* next; //다음 노드를 가리키는 포인터
+	//자기 참조 구조체
+	};
 
 int main()
 {
-#pragma region 바이트 비트 단위
-	//바이트는 컴퓨터에서 데이터를 저장하는 기본 단위이며, 1바이트는 8비트로 구성되어 있습니다.
-	//비트는 0 또는 1의 값을 가지며, 바이트는 8개의 비트로 이루어져 있습니다.
-	//1바이트 = 8비트
-#pragma region MyRegion
+#pragma region 구조체
+	// 여러 개의 변수를 하나의 집합으로 구조화한 다음
+	//하나의 객체를 생성하는것
 
-#pragma endregion
+	//구조체를 선언하기 전에 구조체는 메모리 공간이 생성 되지 않으므로,
+	//구조체 내부에 있는 데이터를 초기화 할 수 없습니다.
+	//구조체를 선언한 후에는 구조체 내부에 있는 데이터를 초기화 할 수 있습니다.
+	//구조체 설계는 메인함수 외부에 만든다.
+	//구조체를 선언하는 방법
+	//struct Card card1; //Card 구조체 타입의 변수 card1을 선언합니다.
+	//구조체를 선언한 후에는 구조체 내부에 있는 데이터를 초기화 할 수 있습니다.
+	//card1.grade = 'A'; //card1의 grade 멤버를 'A'로 초기화합니다.
+	//card1.health = 100; //card1의 health 멤버를 100으로 초기화합니다.
+	//card1.attack = 50.5; //card1의 attack 멤버를 50.5로 초기화합니다.
+	//printf("카드 정보:\n");
+	//printf("등급: %c\n", card1.grade); //card1의 grade 멤버를 출력합니다.
+	//printf("체력: %d\n", card1.health); //card1의 health 멤버를 출력합니다.
+	//printf("공격력: %.2f\n", card1.attack); //card1의 attack 멤버를 출력합니다.
 
-#pragma endregion
+	//struct Card card = {'A', 200, 12.5, 5 };
+	//구조체 초기화 목록은 왼쪽에서부터 순서대로 값을 정의해야 합니다.
 
-	//int a = 10; //a
-
-	//int* ptr = &a; //ptr
-
-#pragma region 동적 할당
-	//프로그램을 실행 중에 필요한 만큼 메모리를 할당하는 작업.
-	
-	//동적 할당은 실행 시간에 가변적으로 메모리의 크키를 변경시킬 수 있으며,
-	//동적으로 메모리의 크기를 할당할 때 바이트 단위로 지정합니다.
-	//동적 할당을 위해서는 stdlib.h 헤더 파일을 포함해야 합니다.
-	//동적 할당을 위해 malloc 함수를 사용하며, 이 함수는 메모리의 크기를 바이트 단위로 지정합니다.
-	//Heap 영역에 메모리를 할당하며, 사용이 끝난 후에는 반드시 free 함수를 사용하여 메모리를 해제해야 합니다.
-	//포인트 타입 void*는 어떤 자료형의 포인터도 가리킬 수 있는 포인터 타입입니다.
-	//오브젝트를 내 마음대로 할당하고 해제할 수 있는 메모리 공간입니다.
-
-	//int* pointer = malloc(4); //4바이트 크기의 메모리를 동적으로 할당합니다.
-	//
-	//*pointer = 10; //할당된 메모리에 값을 저장합니다.
+	//printf("등급 : %c\n", card.grade);
+	//printf("체력 : %d\n", card.health);
+	//printf("공격력 : %.2f\n", card.attack);
+	//printf("쉴드 : %.2f\n", card.shild);
 	//
 	//
-	//printf("pointer가 가리키는 값 : %d\n", *pointer);
-	//
-	//free(pointer); //동적으로 할당된 메모리를 해제합니다.
-	//
-	//pointer = malloc(3 * 4); //3개의 int형 변수를 저장할 수 있는 메모리를 동적으로 할당합니다.=12바이트
-	//for (int i = 0; i < 3; i++)// for 함수로 연속적으로 메모리를 할당합니다.
 	//{
-	//	pointer[i] = (i + 1) * 10;
-	//	printf("pointer[%d]의 값 : %d\n", i, pointer[i]);
+	//	card. grade = 'A';
+	//	card.health = 100;
+	//	card.attack = 50.5;
+	//	card.shild = 25.05;
+	//};
+	//	printf("카드 정보\n");
+	//	printf("등급: %c\n", card.grade);
+	//	printf("체력: %d\n", card.health);
+	//	printf("공격력: %.2f\n", card.attack);
+	//	printf("쉴드: %.2f\n", card.shild);
+	//데이터 오프셋
+
+#pragma endregion
+
+#pragma region 바이트 패딩
+	//맴버 변수를 메모리에서 CPU로 읽을 때 한번에 읽을 수 있도록
+	//컴파일러가 레지스터의 블록에 맞추어 바이트를 패딩해주는 최적화 작업입니다.
+	//구조체 크기의 경우 맴버 변수의 순서에 따라
+	// 메모리 크기가 다르게 설정될 수 있으며,
+	// 구조체 크기를 결정하는 형태는 기본 자료형으로만 구성됩니다.
+
+	//printf("Card 구조체의 크기 : %u\n", sizeof(struct Card));
+	
+	
+#pragma endregion
+
+#pragma region 두 점 사이의 거리
+
+	//printf("sqrt(100.0): %1f\n", sqrt(100));
+	// sqrt= 제곱근을 구하는 함수
+	// pow= 거듭제곱을 구하는 함수
+	// pow(2, 3) = 2^3 = 8
+	//printf("pow(2,3): %1f\n", pow(2, 3));
+
+	
+	//struct where A = { 0,0 };
+	//struct where B = { 5,3 };
+	//
+	//double x = B.x - A.x; //x좌표의 차이
+	//double y = B.y - A.y; //y좌표의 차이
+	//	
+	////두 점 사이의 거리를 구하는 공식
+	//
+	//double lenght = sqrt(pow(x, 2) + pow(y, 2));
+	//printf("두 점 사이의 거리: %.2f\n\n", lenght);
+	//
+	//if (lenght >= 3.0)
+	//{
+	//	printf("Can't Attack\n");
 	//}
-	//free(pointer);
-#pragma endregion
-
-#pragma region 추가내용
-
-#pragma region 메모리 파편화
-//메모리 파편화는 동적 할당과 해제를 반복하면서 발생하는 메모리의 비효율적인 사용을 의미합니다.
-//메모리 파편화는 메모리의 할당과 해제를 반복하면서 발생하는 문제로,
-//메모리의 일부가 사용 중이거나 해제되어 있지만, 연속적인 메모리 공간이 부족하여
-//새로운 메모리를 할당할 수 없는 상황을 말합니다.
-//이로 인해 메모리의 효율적인 사용이 저하되고, 프로그램의 성능에 영향을 미칠 수 있습니다.
-
-#pragma endregion
-
-#pragma region 점진적 가비지 컬렉션
-//점진적 가비지 컬렉션은 메모리 관리 기법 중 하나로,
-//프로그램이 실행되는 동안 주기적으로 사용하지 않는 메모리를 자동으로 해제하는 방식입니다.
-//이 기법은 메모리 파편화를 줄이고, 프로그램의 성능을 향상시키는 데 도움을 줍니다.
-#pragma region 점진적 가비지 컬렉션 단점
-	//점진적 가비지 컬렉션의 단점은 메모리 해제 작업이 주기적으로 발생하기 때문에,
-	//프로그램의 성능에 영향을 미칠 수 있다는 점입니다.
-
-#pragma endregion
-
-#pragma endregion
-
-#pragma region 메모리 플릭
-	//메모리 플릭은 메모리 관리 기법 중 하나로,
-	//프로그램이 실행되는 동안 메모리를 효율적으로 관리하기 위해
-	//메모리의 할당과 해제를 반복하는 방식입니다.
-#pragma region 메모리 플릭 단점
-	//메모리 플릭의 단점은 메모리의 할당과 해제를 반복하면서 발생하는 메모리 파편화 문제입니다.
-	//이로 인해 메모리의 효율적인 사용이 저하되고, 프로그램의 성능에 영향을 미칠 수 있습니다.
-#pragma endregion
-
-
-
-#pragma endregion
-
-#pragma region 숙제 uaf
-	//UAF(Use After Free)는 메모리 관리에서 발생할 수 있는 버그 중 하나로,
-	//heap 영역에서 동적으로 할당된 메모리를 해제한 후 해제된 메모리를 다시 사용하는 경우를 말합니다.
-	//이러한 상황은 프로그램의 예기치 않은 동작을 초래할 수 있으며, 보안 취약점으로 이어질 수 있습니다.
-	//C, C++와 같은 언어에서는 메모리 관리를 프로그래머가 직접 수행하기 때문에
-	//UAF 버그가 발생할 가능성이 높습니다.
-
-	//위험한 이유
-	//해제된 메모리를 다시 사용하면, 해당 메모리 공간에 다른 데이터가 덮어쓰여질 수 있습니다.
-	//이로 인해 프로그램이 예기치 않은 동작을 하거나, 보안 취약점이 발생할 수 있습니다.
-	//일부 해커들은 UAF 버그를 이용하여 악의적인 코드를 실행하거나, 시스템에 침투할 수 있습니다.
-
-	// 메모리를 제참조한 예시 코드
-	int* exuaf = malloc(sizeof(int)); // int형 변수 크기만큼 메모리를 동적으로 할당합니다.
-	*exuaf = 10;
-	printf("exuaf가 가리키는 값 : %d\n", *exuaf);
-	printf("exuaf의 주소 : %p\n", (void*)exuaf);
-
-	free(exuaf); //동적으로 할당된 메모리를 해제합니다.
-
-	printf("exuaf가 가리키는 값 : %d\n", *exuaf); //해제된 메모리를 다시 사용하려고 시도합니다. : UAF 발생
-
 	
-	
+#pragma endregion
 
-	
+#pragma region 자기 참조 구조체
+	//자기 자신과 같은 타입의 포인터를 멤버로 포함하고 있는 구조체
+	//포인터 바이트= 8byte
 
+	struct Node node1 = { 10, NULL};
+	struct Node node2 = { 20, NULL};
+	struct Node node3 = { 30, NULL};
+
+	node1.next = &node2;
+	node2.next = &node3;
+	node3.next = NULL;
+
+	struct Node* currentNode;
+
+	currentNode = &node1;
 
 
 
 #pragma endregion
 
+#pragma region typedef 의 구조와 내용 예시 작성해보기
 
-	
-	
-	
-	return 0;
+#pragma endregion
+
+
+
+
+
 }
