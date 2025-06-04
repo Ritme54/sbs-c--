@@ -110,7 +110,7 @@ int main()
 
 #pragma region 자기 참조 구조체
 	//자기 자신과 같은 타입의 포인터를 멤버로 포함하고 있는 구조체
-	//포인터 바이트= 8byte
+	
 
 	struct Node node1 = { 10, NULL};
 	struct Node node2 = { 20, NULL};
@@ -123,13 +123,28 @@ int main()
 	struct Node* currentNode;
 
 	currentNode = &node1;
+	while (currentNode != NULL) //현재 노드가 NULL이 아닐 때까지 반복
+	{
+		printf("노드 데이터: %d\n", currentNode->data); //현재 노드의 데이터를 출력
+		currentNode = currentNode->next; //다음 노드로 이동
+}
 
 
 
 #pragma endregion
 
-#pragma region typedef 의 구조와 내용 예시 작성해보기
+#pragma region typedef에 대하여
+	//typedef는 C와 C++에서 이미 존재하는 데이터 타입에 새로운 이름을 부여하는 키워드입니다.
+	//typedef를 사용하면 코드의 가독성을 높이고, 복잡한 데이터 타입을 간단하게 표현할 수 있습니다.
+	typedef int Score;
+	Score myScore = 100; // 이 코드에서 typedef int Score;는 int 타입에 Score라는 새로운 이름을 부여합니다.
+	//여기서 Score는 int와 동일한 타입이 됩니다. 따라서 myScore는 int 타입의 변수로 선언된 것입니다.
 
+	typedef struct {
+		int x;
+		int y;
+	} Point;
+	//이 식은 구조체에 Point라는 이름을 부여합니다. 이제 struct 키워드 없이 point를 사용할 수 있습니다.
 #pragma endregion
 
 
