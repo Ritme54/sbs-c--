@@ -1,154 +1,140 @@
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
+#include <time.h>
+#include <locale.h>
 
-struct Card//struct 구조체 이름
-{
-	char grade; //1byte +3byte(패딩) = 4byte
-	int health; //4byte 
-	double attack; //8byte
-	
-	//구조체의 크기는 구조체를 구성하는 멤버 중에서
-	// 가장 큰 자료형의 배수가 되도록 설정합니다.
-};
 
-struct where
-{
-	double x;
-	double y;
-};
+void Shuffle(int array[], int size)  //size
+{ 
+	for (int i = 0; i < size; i++)
+	{
+		int randomIndex = rand() % size; //0~size-1 
+		int temp = array[i];				//
+		array[i] = array[randomIndex];		//셋을 합해서 임시 변수로 스왑하기
+		array[randomIndex] = temp;			//
+	}
 
-struct Node
+}
+
+void View(int count) // 플레이어의 체력을 표시하는 함수
 {
-	int data; //노드에 저장할 데이터
-	struct Node* next; //다음 노드를 가리키는 포인터
-	//자기 참조 구조체
-	};
+	printf("health : "); // 플레이어의 체력 표시
+	for (int i = 0; i < count; i++) // 플레이어의 체력만큼 ♥ 표시
+	{
+		printf("♥"); // 플레이어의 체력으로 표시할 문자 입력
+	}
+	printf("\n\n"); // 플레이어의 체력 표시 후 줄바꿈
+
+	}
+
+
+
+
 
 int main()
 {
-#pragma region 구조체
-	// 여러 개의 변수를 하나의 집합으로 구조화한 다음
-	//하나의 객체를 생성하는것
-
-	//구조체를 선언하기 전에 구조체는 메모리 공간이 생성 되지 않으므로,
-	//구조체 내부에 있는 데이터를 초기화 할 수 없습니다.
-	//구조체를 선언한 후에는 구조체 내부에 있는 데이터를 초기화 할 수 있습니다.
-	//구조체 설계는 메인함수 외부에 만든다.
-	//구조체를 선언하는 방법
-	//struct Card card1; //Card 구조체 타입의 변수 card1을 선언합니다.
-	//구조체를 선언한 후에는 구조체 내부에 있는 데이터를 초기화 할 수 있습니다.
-	//card1.grade = 'A'; //card1의 grade 멤버를 'A'로 초기화합니다.
-	//card1.health = 100; //card1의 health 멤버를 100으로 초기화합니다.
-	//card1.attack = 50.5; //card1의 attack 멤버를 50.5로 초기화합니다.
-	//printf("카드 정보:\n");
-	//printf("등급: %c\n", card1.grade); //card1의 grade 멤버를 출력합니다.
-	//printf("체력: %d\n", card1.health); //card1의 health 멤버를 출력합니다.
-	//printf("공격력: %.2f\n", card1.attack); //card1의 attack 멤버를 출력합니다.
-
-	//struct Card card = {'A', 200, 12.5, 5 };
-	//구조체 초기화 목록은 왼쪽에서부터 순서대로 값을 정의해야 합니다.
-
-	//printf("등급 : %c\n", card.grade);
-	//printf("체력 : %d\n", card.health);
-	//printf("공격력 : %.2f\n", card.attack);
-	//printf("쉴드 : %.2f\n", card.shild);
+#pragma region 의사 난수
+	// rand() : 0~32767 사이의 난수 값을 반환하는 함수.
 	//
+	//time(NULL) : 1970년 1월 1일 0시 0분 0초부터 현재까지의 초를 반환하는 함수.
+	//srand(seed) : 난수 생성기의 시드를 설정하는 함수
 	//
+	//srand((int)time(NULL));
+	// int index = rand() % 50 + 1; //1~50 사이의 난수 생성
+	//
+	//printf("random value : %d\n", index-1);
+	//printf("random value : %d\n", index);
+	//printf("random value : %d\n", index+1);
+
+#pragma endregion
+
+#pragma region 셔플 함수
+	//int list[10] = { 1,2,3,4,5,6,7,8,9,10 };
+	//
+	//int size = sizeof(list) / sizeof(int);
+	//
+	//Shuffle(list, size); //셔플 함수 호출
+	//
+	//for (int i = 0; i < size; i++)
 	//{
-	//	card. grade = 'A';
-	//	card.health = 100;
-	//	card.attack = 50.5;
-	//	card.shild = 25.05;
-	//};
-	//	printf("카드 정보\n");
-	//	printf("등급: %c\n", card.grade);
-	//	printf("체력: %d\n", card.health);
-	//	printf("공격력: %.2f\n", card.attack);
-	//	printf("쉴드: %.2f\n", card.shild);
-	//데이터 오프셋
-
-#pragma endregion
-
-#pragma region 바이트 패딩
-	//맴버 변수를 메모리에서 CPU로 읽을 때 한번에 읽을 수 있도록
-	//컴파일러가 레지스터의 블록에 맞추어 바이트를 패딩해주는 최적화 작업입니다.
-	//구조체 크기의 경우 맴버 변수의 순서에 따라
-	// 메모리 크기가 다르게 설정될 수 있으며,
-	// 구조체 크기를 결정하는 형태는 기본 자료형으로만 구성됩니다.
-
-	//printf("Card 구조체의 크기 : %u\n", sizeof(struct Card));
-	
-	
-#pragma endregion
-
-#pragma region 두 점 사이의 거리
-
-	//printf("sqrt(100.0): %1f\n", sqrt(100));
-	// sqrt= 제곱근을 구하는 함수
-	// pow= 거듭제곱을 구하는 함수
-	// pow(2, 3) = 2^3 = 8
-	//printf("pow(2,3): %1f\n", pow(2, 3));
-
-	
-	//struct where A = { 0,0 };
-	//struct where B = { 5,3 };
-	//
-	//double x = B.x - A.x; //x좌표의 차이
-	//double y = B.y - A.y; //y좌표의 차이
+	//	printf("list[%d]=%d\n", i, list[i]);
 	//	
-	////두 점 사이의 거리를 구하는 공식
-	//
-	//double lenght = sqrt(pow(x, 2) + pow(y, 2));
-	//printf("두 점 사이의 거리: %.2f\n\n", lenght);
-	//
-	//if (lenght >= 3.0)
-	//{
-	//	printf("Can't Attack\n");
 	//}
-	
+	//
+	//for (int i = 0; i < size; i++)
+	//{
+	//	printf("list[%d] = ", i);
+	//	printf("%d ", list[i]);
+	//	printf("\n");
+	//	//printf("list[%d] = %d\n", i, list[i]);
+	//}
+
+	//printf("셔플 전 : ");
+	//for (int i = 0; i < size; i++)
+	//{
+	//	printf("%d ", list[i]);
+	//}
+	//printf("\n");
+	////셔플 함수 호출
+	//Shuffle(list, size);
+	//printf("셔플 후 : ");
+	//for (int i = 0; i < size; i++)
+	//{
+	//	printf("%d ", list[i]);
+	//}
+	//printf("\n");
+
 #pragma endregion
 
-#pragma region 자기 참조 구조체
-	//자기 자신과 같은 타입의 포인터를 멤버로 포함하고 있는 구조체
-	
+#pragma region 풀이
+	srand(time(NULL)); //난수 생성기 초기화
 
-	struct Node node1 = { 10, NULL};
-	struct Node node2 = { 20, NULL};
-	struct Node node3 = { 30, NULL};
+	int health = 5; // 플레이어의 체력
+	int coumputer = rand() % 50 + 1; // 컴퓨터가 선택한 숫자 (1~50)
+	int answer = scanf_s; // 플레이어가 입력한 값 감지
 
-	node1.next = &node2;
-	node2.next = &node3;
-	node3.next = NULL;
-
-	struct Node* currentNode;
-
-	currentNode = &node1;
-	while (currentNode != NULL) //현재 노드가 NULL이 아닐 때까지 반복
+	while (health > 0) //플레이어의 채력이 있을때 
 	{
-		printf("노드 데이터: %d\n", currentNode->data); //현재 노드의 데이터를 출력
-		currentNode = currentNode->next; //다음 노드로 이동
-}
+		View(health); // 플레이어의 체력 표시
 
+		printf("coumputer가 가지고 있는 값 : ");
+		scanf_s("%d", &answer); // 플레이어가 입력한 값
+		printf("\n");
 
+		if (answer > coumputer)
+		{
+			health--;
+			printf("컴퓨터가 가지고 있는 값보다 큽니다.\n");
+			//답이 컴퓨터가 가지고 있는 값보다 크면 플레이어의 체력 감소
+		}
+		else if (answer < coumputer)
+		{
+			health--;
+			printf("컴퓨터가 가지고 있는 값보다 작습니다.\n");
+			// 답이 컴퓨터가 가지고 있는 값보다 작으면 플레이어의 체력 감소
+		}
+		else
+		{
+			break; // 플레이어가 컴퓨터가 가지고 있는 값을 맞추면 반복문 종료
+			//이 항목에서 초과의 경우와 미만의 경우를 모두 처리했으므로
+			//else 문을 사용하여 플레이어가 컴퓨터가 가지고 있는 값을 맞춘 경우를 처리합니다.
+		}
+	}
+
+	if (health > 0) // 플레이어의 체력이 0보다 크면
+	{
+		printf("V I C T O R Y\n");
+	}
+	else // 플레이어의 체력이 0 이하가 되면
+	{
+		printf("D E F E A T\n");
+	}
+
+#pragma region 열거형을 조사해서 예시코드와 이론 정리
 
 #pragma endregion
 
-#pragma region typedef에 대하여
-	//typedef는 C와 C++에서 이미 존재하는 데이터 타입에 새로운 이름을 부여하는 키워드입니다.
-	//typedef를 사용하면 코드의 가독성을 높이고, 복잡한 데이터 타입을 간단하게 표현할 수 있습니다.
-	typedef int Score;
-	Score myScore = 100; // 이 코드에서 typedef int Score;는 int 타입에 Score라는 새로운 이름을 부여합니다.
-	//여기서 Score는 int와 동일한 타입이 됩니다. 따라서 myScore는 int 타입의 변수로 선언된 것입니다.
-
-	typedef struct {
-		int x;
-		int y;
-	} Point;
-	//이 식은 구조체에 Point라는 이름을 부여합니다. 이제 struct 키워드 없이 point를 사용할 수 있습니다.
-#pragma endregion
-
-
-
-
-
+	
+#pragma endregion	
+	return 0;
 }
