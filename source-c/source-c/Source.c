@@ -28,8 +28,36 @@ void View(int count) // 플레이어의 체력을 표시하는 함수
 	}
 
 
+<<<<<<< Updated upstream
 
 
+=======
+	//배열은 원하는 원소에 원하는 값을 저장할 수 있으며
+    //배열의 크기는 컴파일이 되는 시점부터 고정돈 메모리 공간을 가지게 된다.
+		int list[5] = { 1,2, 3, 4, 5 };
+
+		int* Y = &list;
+
+		printf("list[0]의 값 : %d\n", list[0]);
+		
+		printf("Y변수의 값 : %p\n", Y);
+		
+		list[4] = 50;
+		printf("list[4]의 값 : %d\n", list[4]);
+
+		printf("list의 값: %d\n", list);
+
+		Y = Y + 1;
+		
+		printf("Y변수의 값 : %p\n", Y);
+		printf("list[1]의 주소 값 :%p\n", &list[1]);
+		
+		//float room[] = { 8.5,10.5,12.5 };
+		//
+		//배열의 크기는 생략할 수 있으며,
+		//초기화 목록에서 설정한 요소에 따라 배열의 크기가 결정된다.
+		//pointer+1 에서 +1은 사용하는 자료값 즉 int=4byte 
+>>>>>>> Stashed changes
 
 int main()
 {
@@ -69,6 +97,7 @@ int main()
 	//	//printf("list[%d] = %d\n", i, list[i]);
 	//}
 
+<<<<<<< Updated upstream
 	//printf("셔플 전 : ");
 	//for (int i = 0; i < size; i++)
 	//{
@@ -83,6 +112,37 @@ int main()
 	//	printf("%d ", list[i]);
 	//}
 	//printf("\n");
+=======
+		//문자열의 경우 포인터를 이용하여 문자열 상수를 가리키도록 할 수 있으며,
+		//문자열 상수는 데이터 영역에 읽기 전용 공간에 저장되기 때문에 문자열의 값을 변경할 수 없다.
+
+//		const char* word = "Game";
+
+	//word = "League of Leg\0end";
+		//		6	1 2 1 3 1 3 1
+
+		//printf("word의 문자열 : %s\n", word);
+	
+		//문자열의 공백도 함께 메모리 공간에 포함하여 크기가 결정되며,
+		//마지막에 문자열의 끝을 알려주는 보이지 않는 제어문자 null(\0)이 존재한다.
+		//Read Only data segment (읽기 전용 메모리 공간)
+		// 문자열을 저장하게 되면 맨 마지막에 무효의 문자까지 저장한다.
+		//ㅁㅁㅁㅁ
+		//00FA5D0
+
+	//char name[] = "James";
+
+	//printf("name배열의 값 : %s\n", name);
+	//            (문자열)
+	//name[0] = 'S';
+	//name = "booms"
+
+
+	//인덱스 값에서 문자를 바꿀때는 ''사용
+	//printf("name배열의 값 : %s\n", name);
+
+	
+>>>>>>> Stashed changes
 
 #pragma endregion
 
