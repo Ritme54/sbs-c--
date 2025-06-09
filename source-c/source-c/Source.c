@@ -147,50 +147,94 @@ int main()
 #pragma endregion
 
 #pragma region 풀이
-	srand(time(NULL)); //난수 생성기 초기화
+	//srand(time(NULL)); //난수 생성기 초기화
+	//
+	//int health = 5; // 플레이어의 체력
+	//int coumputer = rand() % 50 + 1; // 컴퓨터가 선택한 숫자 (1~50)
+	//int answer = scanf_s; // 플레이어가 입력한 값 감지
+	//
+	//while (health > 0) //플레이어의 채력이 있을때 
+	//{
+	//	View(health); // 플레이어의 체력 표시
+	//
+	//	printf("coumputer가 가지고 있는 값 : ");
+	//	scanf_s("%d", &answer); // 플레이어가 입력한 값
+	//	printf("\n");
+	//
+	//	if (answer > coumputer)
+	//	{
+	//		health--;
+	//		printf("컴퓨터가 가지고 있는 값보다 큽니다.\n");
+	//		//답이 컴퓨터가 가지고 있는 값보다 크면 플레이어의 체력 감소
+	//	}
+	//	else if (answer < coumputer)
+	//	{
+	//		health--;
+	//		printf("컴퓨터가 가지고 있는 값보다 작습니다.\n");
+	//		// 답이 컴퓨터가 가지고 있는 값보다 작으면 플레이어의 체력 감소
+	//	}
+	//	else
+	//	{
+	//		break; // 플레이어가 컴퓨터가 가지고 있는 값을 맞추면 반복문 종료
+	//		//이 항목에서 초과의 경우와 미만의 경우를 모두 처리했으므로
+	//		//else 문을 사용하여 플레이어가 컴퓨터가 가지고 있는 값을 맞춘 경우를 처리합니다.
+	//	}
+	//}
+	//
+	//if (health > 0) // 플레이어의 체력이 0보다 크면
+	//{
+	//	printf("V I C T O R Y\n");
+	//}
+	//else // 플레이어의 체력이 0 이하가 되면
+	//{
+	//	printf("D E F E A T\n");
+	//}
 
-	int health = 5; // 플레이어의 체력
-	int coumputer = rand() % 50 + 1; // 컴퓨터가 선택한 숫자 (1~50)
-	int answer = scanf_s; // 플레이어가 입력한 값 감지
+#pragma region 열거형에 대하여
+	//열거형은여러개의 정수 상수를 묶어서 하나의 이름으로 정의할 수 있는 자료형입니다.
+	//열거형을 사용하면 코드의 가독성을 높이고, 상수 값을 관리하기 쉽게 만들어줍니다.
+	//enum 키워드를	사용하여 열거형을 정의할 수 있으며 별도의 값을 지정하지 않으면
+	// 첫 번째 값은 0부터 시작하고, 이후 값은 이전 값에 1씩 더해진 값을 가집니다.
+	//필요시 typedef를 사용하여 열거형을 정의할 수 있습니다.
 
-	while (health > 0) //플레이어의 채력이 있을때 
+	//typedef enum{rock, paper, scissors} HandType; //열거형 정의
+
+	//열거형을 사용하는 이유
+	// 1. 가독성 향상: 열거형을 사용하면 코드의 의미를 명확하게 표현할 수 있습니다.
+	// 2. 상수 관리 용이: 열거형을 사용하면 관련된 상수들을 그룹화하여 관리할 수 있습니다.
+	// 3. 코드 유지보수 용이: 열거형을 사용하면 상수 값을 변경할 때, 열거형 정의만 수정하면 되므로 코드 유지보수가 용이합니다.
+
+
+
+typedef enum { warrior, mage, archer } CharacterType; // 캐릭터 타입 정의
+	//typedef를 사용하여 열거형을 정의합니다. warrior, mage, archer는 각각 전사, 마법사, 궁수 캐릭터를 나타냅니다.
+CharacterType Type; // 캐릭터 타입 변수 선언
+//CharacterType은 열거형으로 정의된 캐릭터 타입을 나타내는 변수입니다.
+ 
+printf("캐릭터를 선택하세요.\n");
+scanf_s("%d", (int*)&Type); // 사용자로부터 캐릭터 타입 입력 받기
+
+
+//사용자가 입력한 값을 Type 변수에 저장합니다. 입력 값은 0, 1, 2 중 하나입니다.
+
+#pragma region 캐릭터 선택
+	switch (Type) // 선택한 캐릭터에 따라 다른 메시지 출력
 	{
-		View(health); // 플레이어의 체력 표시
-
-		printf("coumputer가 가지고 있는 값 : ");
-		scanf_s("%d", &answer); // 플레이어가 입력한 값
-		printf("\n");
-
-		if (answer > coumputer)
-		{
-			health--;
-			printf("컴퓨터가 가지고 있는 값보다 큽니다.\n");
-			//답이 컴퓨터가 가지고 있는 값보다 크면 플레이어의 체력 감소
-		}
-		else if (answer < coumputer)
-		{
-			health--;
-			printf("컴퓨터가 가지고 있는 값보다 작습니다.\n");
-			// 답이 컴퓨터가 가지고 있는 값보다 작으면 플레이어의 체력 감소
-		}
-		else
-		{
-			break; // 플레이어가 컴퓨터가 가지고 있는 값을 맞추면 반복문 종료
-			//이 항목에서 초과의 경우와 미만의 경우를 모두 처리했으므로
-			//else 문을 사용하여 플레이어가 컴퓨터가 가지고 있는 값을 맞춘 경우를 처리합니다.
-		}
+	case warrior: // 전사 선택
+		printf("전사를 선택하셨습니다.\n");
+		break;
+	case mage: // 마법사 선택
+		printf("마법사를 선택하셨습니다.\n");
+		break;
+	case archer: // 궁수 선택
+		printf("궁수를 선택하셨습니다.\n");
+		break;
+	default: // 잘못된 입력 처리
+		printf("잘못된 입력입니다.\n");
+		break;
 	}
 
-	if (health > 0) // 플레이어의 체력이 0보다 크면
-	{
-		printf("V I C T O R Y\n");
-	}
-	else // 플레이어의 체력이 0 이하가 되면
-	{
-		printf("D E F E A T\n");
-	}
 
-#pragma region 열거형을 조사해서 예시코드와 이론 정리
 
 #pragma endregion
 
